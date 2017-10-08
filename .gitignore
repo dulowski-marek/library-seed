@@ -1,0 +1,8 @@
+.artifacts
+
+node_modules
+
+src/**/*.js
+src/**/*.js.map
+
+index.umd.js

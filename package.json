@@ -2,11 +2,13 @@
   "name": "library-seed",
   "version": "0.1.0",
   "description": "Repository for quickly setting up libraries development",
-  "main": "index.js",
+  "main": "index.umd.js",
+  "module": "es2015/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "start": "tsc -w",
     "test": "tsc && mocha src/**/*.spec.js --require babel-register",
-    "build": "tsc -p .config/tsconfig.build.json"
+    "build": "tsc && tsc -p .config/tsconfig.build.json && webpack --config .config/webpack.build.js --progress --colors"
   },
   "repository": "git@github.com:dulowski-marek/library-seed.git",
   "author": "Marek Dulowski",
