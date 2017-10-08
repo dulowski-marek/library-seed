@@ -1,6 +1,6 @@
 {
   "name": "library-seed",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Repository for quickly setting up libraries development",
   "main": "index.js",
   "scripts": {
